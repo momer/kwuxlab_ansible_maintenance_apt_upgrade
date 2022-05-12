@@ -2,8 +2,6 @@
 - hosts: "{{ target_host_group | default('all')}}"
   become: yes
   gather_facts: yes
-  handlers:
-    - include: handlers/task_completion.yml
   vars_files:
     - vars.yml
     - version.yml
