@@ -6,7 +6,7 @@
     - vars.yml
     - version.yml
   tags:
-    - kwuxlab_maintenance_upgrade
+    - kwuxlab_ansible_maintenance_upgrade
   pre_tasks:
     - name: Collect facts
       ansible.builtin.setup:
